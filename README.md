@@ -1,4 +1,6 @@
-# Ingo's Masonry Theme for Shopware 6 (sw-IngoSMasonryTheme)
+# Ingo's Masonry Theme for Shopware 6 
+
+## sw-IngoSMasonryTheme
 
 A Shopware 6 theme used for my Open Mind Culture (demo)shop to experiment and showcase frontend customization possibilities while maintaining performance, sustainability, and accessibility.
 
