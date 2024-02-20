@@ -8,7 +8,7 @@ Content and style are partially inspired by potential customers' requirements.
  - web fonts
  - ...
 
-The development enviroment is the same as the one used for [Ingo's Cost Transparency](https://github.com/openmindculture/sw-IngoSCostTransparency) extension, based on the Dockware docker-compose setup.
+The development enviroment is the same as the one used for [Ingo's Cost Transparency](https://github.com/openmindculture/sw-IngoSCostTransparency) extension, based on my [Shopware 6 Theme/Plugin Development Template](https://github.com/openmindculture/IngoSDev6CertPrep), using the Dockware docker-compose setup.
 
 Contribution: you can open issues and pull requests on GitHub.
 
