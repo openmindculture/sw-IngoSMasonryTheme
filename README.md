@@ -2,11 +2,12 @@
 
 ## sw-IngoSMasonryTheme
 
-A Shopware 6 theme used for my Open Mind Culture (demo)shop to experiment and showcase frontend customization possibilities while maintaining performance, sustainability, and accessibility.
+A Shopware 6 theme used for my demo shop(s) to experiment and showcase frontend customization possibilities while maintaining performance, sustainability, and accessibility.
 
 Content and style are partially inspired by potential customers' requirements.
 
  - masonry layout for product grid view
+ - apricot color palette
  - web fonts
  - ...
 
