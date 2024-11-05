@@ -23,7 +23,7 @@ Thanks to [dasistweb](https://www.dasistweb.de/), the Docker-based [dockware](ht
 
 ### Start the Shopware Development Container
 
-- `docker-compose up -d`
+- `docker compose up -d`
 
 ### Open the Storefront or Administration in a Browser
 
@@ -38,8 +38,15 @@ You will start in the Shopware project root `/var/www/html` where you can type c
 `bin/console plugin:create foobar`
 to create a new plugin structure.
 
+- use IngoSMasonryTheme in the storefront and for development
+  - `bin/console plugin:refresh`
+  - `bin/console plugin:install --activate IngoSMasonryTheme`
+  - `bin/console theme:refresh`
+  - `bin/console theme:change`
+
 #### Useful Console Commands
 
+- `bin/build-storefront.sh`
 - `bin/console cache:clear`
 - `bin/console theme:refresh`
 
