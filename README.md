@@ -1,6 +1,6 @@
 # Ingo's Masonry Theme for Shopware 6 
 
-## sw-IngoSMasonryTheme
+## sw-IngosMasonryTheme
 
 A Shopware 6 theme used for my demo shop(s) to experiment and showcase frontend customization possibilities while maintaining performance, sustainability, and accessibility.
 
@@ -38,10 +38,11 @@ You will start in the Shopware project root `/var/www/html` where you can type c
 `bin/console plugin:create foobar`
 to create a new plugin structure.
 
-- use IngoSMasonryTheme in the storefront and for development
+- use IngosMasonryTheme in the storefront and for development
   - `bin/console plugin:refresh`
-  - `bin/console plugin:install --activate IngoSMasonryTheme`
+  - `bin/console plugin:install --activate IngosMasonryTheme`
   - `bin/console theme:refresh`
+  - `bin/console theme:compile`
   - `bin/console theme:change`
 
 #### Useful Console Commands
@@ -92,6 +93,20 @@ Scripts seem to output verbose warnings by default. Add `--no-debug` to suppress
 Last but not least, you can build an exportable zip archive file to upload into a shop backend or Shopware's plugin marketplace.
 
 There is an optional Shopware CLI that is not included in Dockware. You can get it from
-[sw-cli.fos.gg](https://sw-cli.fos.gg) and use the `extension` command to build a theme file:
+[sw-cli.fos.gg](https://sw-cli.fos.gg) and use the `extension` command to build a theme archive using all files:
 
-- `shopware-cli extension zip MyTheme`
+- `shopware-cli extension zip ./custom/plugins/IngoSMasonryTheme --disable-git --output-directory .`
+
+But this will include the `vendor` directory and produce a huge file, so we must either use a git (release) branch,
+or create a zip manually.
+
+Expected structure inside the zip file `IngoSMasonryTheme.zip`:
+`IngoSMasonryTheme/`
+`IngoSMasonryTheme/src`
+`IngoSMasonryTheme/composer.json`
+
+So we can zip our src/IngoSMasonryTheme directory.
+
+We can still use `sw-cli` to validate our extension archive:
+
+- `shopware-cli extension validate ./custom/plugins/IngoSMasonryTheme.zip`

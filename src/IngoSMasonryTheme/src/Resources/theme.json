@@ -1,0 +1,38 @@
+{
+  "name": "IngoSMasonryTheme",
+  "author": "Ingo Steinke",
+  "description": {
+    "en-GB": "Ingo's Masonry Theme",
+    "de-DE": "Ingo's Masonry Theme"
+  },
+  "views": [
+     "@Storefront",
+     "@Plugins",
+     "@IngoSMasonryTheme"
+  ],
+  "style": [
+    "app/storefront/src/scss/overrides.scss",
+    "@Storefront",
+    "app/storefront/src/scss/base.scss"
+  ],
+  "script": [
+    "@Storefront",
+    "app/storefront/dist/storefront/js/ingos-masonry-theme.js"
+  ],
+  "asset": [
+    "@Storefront",
+    "app/storefront/src/assets"
+  ],
+  "previewMedia": "app/storefront/src/assets/ThemePreview.png",
+  "sw-logo-favicon": {
+    "label": {
+      "en-GB": "Favicon",
+      "de-DE": "Favicon"
+    },
+    "type": "media",
+    "value": "app/storefront/dist/assets/favicon.png",
+    "editable": true,
+    "block": "media",
+    "order": 500
+  }
+}

@@ -1,0 +1,6 @@
+{% sw_extends '@Storefront/storefront/layout/header/header.html.twig' %}
+
+{% block layout_header_logo_image %}
+    {{ parent() }}
+    <span class="ingos-masonry-theme-site-title">{{ 'header.logoLink'|trans|striptags }}</span>
+{% endblock %}

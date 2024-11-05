@@ -1,0 +1,27 @@
+/*
+ * Libraries
+ * ---------- */
+@import 'vendor/animate';
+
+/*
+ * Modified Components
+ * ---------- */
+@import 'component/product-box';
+@import 'pagelet/header';
+@import 'todo';
+
+@font-face {
+  font-family: 'Climate Crisis';
+  src: url('#{$my-asset-path}/fonts/ClimateCrisis-Regular-VariableFont_YEAR') format('woff2');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+h1,h2,h3,h4,h5 {
+  font-family: "Climate Crisis", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "YEAR" 1979;
+}
