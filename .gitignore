@@ -2,6 +2,7 @@
 docker-compose.override.yml
 node_modules
 vendor
+!src/Resources/app/storefront/src/scss/vendor
 .vscode
 .idea
 Thumbs.db
